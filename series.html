@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Series · Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="brand">
+                <h1 data-site-name>Your Name</h1>
+                <p data-site-subtitle>Photography Portfolio</p>
+            </div>
+
+            <nav class="nav" aria-label="메뉴">
+                <a href="index.html">Work</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="work-header">
+            <div class="breadcrumb">
+                <a href="index.html">Work</a> / <span id="seriesCrumb">Series</span>
+            </div>
+            <h2 class="work-title" id="seriesTitle">Series</h2>
+            <p class="work-sub" id="seriesSub"></p>
+        </section>
+
+        <!-- 사진만 쭉 -->
+        <section class="photos photos-plain" id="photos" aria-label="시리즈 사진"></section>
+
+        <nav class="pager" aria-label="이동">
+            <a href="index.html">← Back to Work</a>
+        </nav>
+    </main>
+
+    <footer class="footer">
+        © <span id="y"></span> <span data-site-name>Your Name</span>
+    </footer>
+
+    <!-- 라이트박스 오버레이 -->
+    <div class="lightbox" aria-hidden="true">
+        <button class="lb-close" type="button" aria-label="닫기">×</button>
+        <img alt="">
+    </div>
+
+    <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
