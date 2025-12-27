@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About · Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="brand">
+                <h1>Your Name</h1>
+                <p>Photography Portfolio</p>
+            </div>
+
+            <nav class="nav" aria-label="메뉴">
+                <a href="index.html">Work</a>
+                <a class="is-active" href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="panel">
+            <div class="panel-inner">
+                <div class="kicker">About</div>
+                <h2 class="page-title">작업 소개</h2>
+
+                <div class="prose">
+                    <p>
+                        여기에 너의 짧은 소개를 넣어줘. (2~5문장 추천)
+                        예: 나는 ______를 관찰하고 기록한다. 사진을 통해 ______를 남기고 싶다.
+                    </p>
+                    <p>
+                        텍스트는 길지 않아도 괜찮아. 대신 단어 선택과 호흡(줄바꿈)이 예쁘면
+                        포트폴리오 전체 톤이 단정해져.
+                    </p>
+
+                    <ul class="list">
+                        <li>관심 주제: ______</li>
+                        <li>작업 방식: ______</li>
+                        <li>기반/거점: ______</li>
+                    </ul>
+
+                    <p class="note">
+                        * 팁: ‘나는 어떤 사람’보다 ‘무엇을 어떻게 바라보는지’가 더 인상적으로 남아.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        © <span id="y"></span> Your Name
+    </footer>
+
+    <script>
+        document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
